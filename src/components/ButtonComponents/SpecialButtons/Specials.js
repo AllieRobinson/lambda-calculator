@@ -11,7 +11,9 @@ const Specials = () => {
   const [buttonSpecials, setbuttonSpecials] = useState(specials);
   return (
     <div>
-      {}
+      {buttonSpecials.map(special => <SpecialButton special={special} />)}
     </div>
   );
 };
+
+export default Specials;
