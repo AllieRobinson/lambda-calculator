@@ -2,7 +2,8 @@ import React from "react";
 
 const NumberButton = (props) => {
   return (
-    <button className="number-button">
+    <button onClick={() => props.addNumber(props.text)} 
+    className="number-button">
       {props.text}
     </button>
   );
