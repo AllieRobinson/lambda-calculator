@@ -24,11 +24,14 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display number={displayValue} />
-        <Operators />
-        <Specials />
-        <Numbers addNumber={addNumber} />
+          <Display number={displayValue} />
+        <div className="setwidth">
+          <Specials />
+          <Numbers addNumber={addNumber} />
+        </div>
+        <div className="operator-container">
+          <Operators />
+        </div>
       </div>
     </div>
   );
